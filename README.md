@@ -1,12 +1,15 @@
 # GramNet
-  
+{
+Code Debreifing:
+Start with scanning your adhaar QR with final.php or enter it manually. After the initial sumbission it would add your UID into existing database, Now it would be redirected to a new page where you confirm your mobile number and plan. Submission would add the Plan to the existing database. On the 3rd link you'll be guided towards a payment gateway address where you can confirm the submission. Based upon your location Latitudde longitude for furthur data manipulation would be updated in the library
+}
 
       Gram-Net
 
 Digitalising Villages
 
 PS?
-•	To solve internet connectivity issues in rural areas
+To solve internet connectivity issues in rural areas
 
 Steps:
 1.	Describe the PS
