@@ -26,47 +26,33 @@
 		<div class="main-content">
 			<div class="form-mini-container">
 				<h1> Select Your plan</h1>
-				<form class="form-mini" method="get" action="Selection.php">
+				<form class="form-mini" method="get" action="payment.php">
 					<div class="form-row">
 						Hi User : #Username#, Please Select your plan: 
 						<br><br>
-						<div class="form-radio-buttons">
-						<div>
-                            <label>
-                                <input type="radio" name="radio">
-                                <span>2 Rs 50 Mb 5 Hrs</span>
-                            </label>
-                        </div>
-
-                        <div>
-                            <label>
-                                <input type="radio" name="radio">
-                                <span>5 Rs 100 Mb 5 hrs</span>
-                            </label>
-                        </div>
-
-                        <div>
-                            <label>
-                                <input type="radio" name="radio">
-                                <span>25 rs 1 GB 1 day </span>
-                            </label>
-                        </div>
-						
-						<div>
-                            <label>
-                                <input type="radio" name="radio">
-                                <span>200 rs 20 GB 30 days </span>
-                            </label>
-                        </div>
+						<div class="form-row">
+							Choose a pack
+							<ol>
+								<li>2 rs 50 mb 5 Hrs</li>
+								<li> 5 Rs 100 mb 6 Hrs </li>
+								<li> 25rs 1 Gb 1 day</li>
+								<li>200rs 20 GB 3 days</li>
+							</ol>
+						</div>
+						<label>
+							<span>Enter the serial Number of Plan</span>
+								<input type="text" name="Plan" id="Plan">
+						</label>
+					</div>
 					<br>
 					<div class="form-row">
 						<label>
 							<span>Enter the phn number you want to recharge</span>
-								<input type="text" name="Phn" id="here">
+								<input type="text" name="Phn" id="Phn" value="#phn">
 						</label>
 					</div>
 					<div>
-						<button type="submit"><a href="payment.php">Submit</a></button>
+						<input type="submit" id ="print"></input>
 					</div>
 				</form>
 			</div>
