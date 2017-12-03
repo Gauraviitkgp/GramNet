@@ -4,10 +4,24 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-
+	
 		<title>Gram Net</title>
 		<link rel="stylesheet" href="assets/demo.css">
 		<link rel="stylesheet" href="assets/form-labels-on-top.css">
+		<script>
+			var x = document.getElementById("demo");
+			function getLocation() {
+				if (navigator.geolocation) {
+					navigator.geolocation.getCurrentPosition(showPosition);
+				} else {
+					x.innerHTML = "Geolocation is not supported by this browser.";
+				}
+			}
+			function showPosition(position) {
+				x.innerHTML = "Latitude: " + position.coords.latitude + 
+				"<br>Longitude: " + position.coords.longitude; 
+			}
+		</script>
 	</head>
 	<body>
 		<header>
@@ -20,7 +34,7 @@
 			<li><a href="Selection.php">Select Package</a></li>
 			<li><a href="Payment.php">Pay amount</a></li>
 		</ul>
-	
+		<input type="submit" onclick="getLocation()" align="middle	" value="Get Location" ></button>
 		<div class="main-content">	
 			<form class="form-labels-on-top" method="post" action="final_submission.php">
 			
@@ -32,6 +46,7 @@
 					<label>
 						<span>Scan Your QR code here</span>
 						<div id="reader" style="width:300px;height:250px">
+						<input type="button"><a href ="https://schmich.github.io/instascan/">Scan QR</a></input>
 						</div>
                 	</label>
            		</div><br><br>
@@ -50,7 +65,7 @@
 				</div>
 				
 				<div>
-					<input type="submit" id ="print"><a href="Selection.php">Submit</a></input>
+					<input type="submit" id ="print"></input>
 				</div>
 				
 			</form>
